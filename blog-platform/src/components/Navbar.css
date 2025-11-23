@@ -1,0 +1,41 @@
+/* AppBar */
+.navbar-appbar {
+  background-color: #0a0e27;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Icon */
+.navbar-icon {
+  margin-right: 16px;
+}
+
+/* Brand/Logo */
+.navbar-brand {
+  flex-grow: 1;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Navigation Buttons Container */
+.navbar-nav {
+  display: flex;
+}
+
+/* Navigation Buttons */
+.navbar-button {
+  color: inherit;
+}
+
+.navbar-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Logout Button Hover */
+.navbar-button-logout:hover {
+  background-color: rgba(255, 107, 107, 0.2);
+}
+
+/* Register Button Hover */
+.navbar-button-register:hover {
+  background-color: rgba(102, 126, 234, 0.2);
+}

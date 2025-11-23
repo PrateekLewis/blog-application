@@ -1,0 +1,104 @@
+/* Container */
+.profile-container {
+  min-height: 100vh;
+  background-color: #0a0e27;
+  background-image: radial-gradient(circle at 20% 50%, rgba(102, 126, 234, 0.1) 0%, transparent 50%), 
+                    radial-gradient(circle at 80% 80%, rgba(118, 75, 162, 0.1) 0%, transparent 50%);
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+/* Loading State */
+.profile-loading {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0a0e27;
+}
+
+/* Profile Card */
+.profile-card {
+  border-radius: 16px;
+  background-color: rgba(26, 31, 58, 0.9);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Header */
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  margin-right: 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.profile-avatar-icon {
+  font-size: 50px;
+}
+
+.profile-title {
+  color: white;
+  font-weight: 700;
+}
+
+.profile-subtitle {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Alerts */
+.profile-alert-success {
+  margin-bottom: 24px;
+  background-color: rgba(76, 175, 80, 0.1);
+  color: #4caf50;
+  border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.profile-alert-error {
+  margin-bottom: 24px;
+  background-color: rgba(211, 47, 47, 0.1);
+  color: #ff6b6b;
+  border: 1px solid rgba(211, 47, 47, 0.3);
+}
+
+/* Form */
+.profile-form {
+  width: 100%;
+}
+
+/* Submit Button */
+.profile-submit-button {
+  margin-top: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: none;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  transition: all 0.3s ease;
+}
+
+.profile-submit-button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .profile-card {
+    padding: 24px;
+  }
+}
+
+@media (min-width: 600px) {
+  .profile-card {
+    padding: 40px;
+  }
+}
